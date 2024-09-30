@@ -1,16 +1,25 @@
+//indica que se usara un lenguaje html 5 
 <!DOCTYPE html>
+//indica el idioma de la página 
 <html lang="en">
+//indica los metadatos de la página 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    //le da nombre a la página de tro de la pesyaña 
     <title>Document</title>
+    //llama al archivo de estilo  
     <link rel="stylesheet" href="principal.css">
 </head>
+//separa los metadatos del contenido 
 <body>
+  //indica una dividion que contendrá la calculadofa entera 
   <div class="calculator">
+    //declara una entrada de gexto que se usara como pantalla
     <input type="text" id="display" class="calculator-screen" value="" disabled>
+      //indica una división entre la panfalla y los botones 
     <div class="calculator-buttons">
-
+      //crea botones y los enlaca a acciones de la hoja de validaciones 
         <button class="button" onclick="clearDisplay()">C</button>
         <button class="button" onclick="deleteLast()">DEL</button>
         <button class="button" onclick="appendToDisplay('/')">/</button>
@@ -46,7 +55,7 @@
 
 
 
-
+//llama al archivo de validaciones 
     <script src="principal.js"></script> 
 </body>
 </html>
